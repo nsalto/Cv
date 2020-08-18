@@ -1,0 +1,44 @@
+#profilePhoto {
+    width: 70%;
+    height: 70%;
+}
+body {
+    background-color: black;
+    font-family: 'Roboto', 'Verdana';
+    font-size: 14px;
+
+}
+.content {
+    background-color: black;
+}
+#dpersonales {
+    background-color: #0B0B3B;
+    color: white;
+}
+
+@media print {
+	.no-printme  {
+		display: none;
+	}
+	.printme  {
+		display: block;
+	}
+}
+.floating-d {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.floating-p {
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+}
+.badge {
+    text-transform: uppercase;
+}
+@media (max-width: 768px){
+    .information{
+        margin-top: 25px;
+    }
+}
