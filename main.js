@@ -72,8 +72,7 @@ const lenguajesAprendiendo = [
     "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
     "https://devicons.github.io/devicon/devicon.git/icons/react/react-original.svg",
     "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
-    "https://i7.pngguru.com/preview/824/41/201/javascript-react-static-web-page-github-npm-gatsby.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToNy-NHNe4UIPIB2AZ9Ll194MlguLTLrj0hg&usqp=CAU",
+    "https://spng.pngfind.com/pngs/s/626-6262352_load-images-in-gatsby-gatsbyjs-icon-hd-png.png",
     "https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg",
     "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg",
     
