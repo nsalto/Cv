@@ -14,6 +14,11 @@ const estudios = [{
     lugar: "Adolfo Bioy Casares",
     periodo: "2003-2009",
     descripción: "Bachiller en Economía y gestión de las organizaciones con especialidad en turismo y hotelería"
+    },
+    {
+    lugar: "Facultad de Matemática Astronomía, Física y Computación (UNC)",
+    periodo: "2015-actualidad",
+    descripción: "Licenciatura en ciencias de la computación"
     }
 ];
 
@@ -38,6 +43,12 @@ const lenguajesActuales = [
     },
     {   ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/782px-Microsoft_Excel_2013_logo.svg.png",
         label: "Excel"
+    },
+    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/slack/slack-original.svg",
+        label: "Slack"
+    },
+    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original.svg",
+        label: "MongoDB"
     }
 ]; 
 
@@ -59,10 +70,13 @@ const cursos_certificados = [
 
 const lenguajesAprendiendo = [
     "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
-    "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original.svg",
+    "https://devicons.github.io/devicon/devicon.git/icons/react/react-original.svg",
+    "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
+    "https://i7.pngguru.com/preview/824/41/201/javascript-react-static-web-page-github-npm-gatsby.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToNy-NHNe4UIPIB2AZ9Ll194MlguLTLrj0hg&usqp=CAU",
     "https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg",
     "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg",
-    "https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original.svg"
+    
 ]
 
 // Cursos y certificados
