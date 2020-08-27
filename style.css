@@ -1,7 +1,6 @@
 #profilePhoto {
     width: 60%;
     height: 60%;
-    border: solid black 2px;
 }
 body {
     background-color: rgb(92, 91, 91);
@@ -15,6 +14,7 @@ body {
 #dpersonales {
     background-color: #FFFFFF;
     color: black;
+    max-width: 400px;
 }
 
 @media print {
