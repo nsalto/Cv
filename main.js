@@ -1,14 +1,17 @@
 const experiencia = [{
     lugar: "Konecta Argentina",
     periodo: "2019 - Actualidad",
+    puesto: "Analista administrativo de datos",
     descripción: "Realizar informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
     },
     {
     lugar: "Konecta Argentina",
+    puesto: "Facilitador",
     periodo: "2017-2019",
     descripción: "Monitoreo, optimizacion y logística de rutas de técnicos instaladores."
     }
 ];
+
 
 const estudios = [{
     lugar: "Adolfo Bioy Casares",
@@ -96,6 +99,7 @@ for (i = 0; i < experiencia.length; i++){
     <h6 class="br">${experiencia[i].lugar}</h6>
     </div>
     <span class="exp-date"><i class="far fa-calendar-alt mr-2"></i>${experiencia[i].periodo}</span>
+    <p><b>${experiencia[i].puesto}</b><p>
     <p>${experiencia[i].descripción}</p> <hr>`
     document.getElementById("experiencia").appendChild(item)
 }
