@@ -1,7 +1,8 @@
 #profilePhoto {
     width: 60%;
     height: 60%;
-    margin: 21%;   
+    margin: 21%;
+    border: 1px solid white;
 }
 body {
     font-family: 'Roboto', 'Verdana';
