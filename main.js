@@ -66,7 +66,7 @@ const cursos_certificados = [
     },
     {   link: "#",
         label: "Machine Learning: Data Science with Python",
-        icon: "https://img.icons8.com/windows/32/000000/free-code-camp.png"
+        icon: "https://cdn.freebiesupply.com/logos/large/2x/udemy-1-logo-png-transparent.png"
     }
 ];
 
