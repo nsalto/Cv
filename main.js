@@ -66,7 +66,7 @@ const cursos_certificados = [
     },
     {   link: "#",
         label: "Machine Learning: Data Science with Python",
-        icon: "https://cdn.freebiesupply.com/logos/large/2x/udemy-1-logo-png-transparent.png"
+        icon: "https://img.icons8.com/windows/32/000000/free-code-camp.png"
     }
 ];
 
@@ -86,7 +86,7 @@ for (i = 0; i < cursos_certificados.length; i++){
     var item = document.createElement("div")
     item.innerHTML =
     `<div class="d-flex justify-content-between mt-4">
-    <h6><img width="30px" src=${cursos_certificados[i].icon}/><a href=${cursos_certificados[i].link}> ${cursos_certificados[i].label}</a></h6>
+    <h6><img width="30px" hight="30px" src=${cursos_certificados[i].icon}/><a href=${cursos_certificados[i].link}> ${cursos_certificados[i].label}</a></h6>
     </div>`
     document.getElementById("cyc").appendChild(item)
 }

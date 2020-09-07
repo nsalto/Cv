@@ -1,20 +1,26 @@
 #profilePhoto {
     width: 60%;
     height: 60%;
+    margin: 21%;   
 }
 body {
-    background-color: rgb(92, 91, 91);
     font-family: 'Roboto', 'Verdana';
     font-size: 14px;
-
-}
-.content {
-    background-color: rgb(92, 91, 91);
+    background-image: url('./bg.png');
+    background-size: cover;
 }
 #dpersonales {
-    background-color: #FFFFFF;
-    color: black;
     max-width: 400px;
+    background-color: rgba(53, 75, 134, 0.973) ;
+    color: white;
+}
+
+a {
+    color: black;
+  }
+
+#cardcontent{
+    background-color: rgba(53, 75, 134, 0.7) ;
 }
 
 @media print {
@@ -23,8 +29,12 @@ body {
 	}
 	.printme  {
 		display: block;
-	}
+    }
+    .container {
+        width: auto;
+      }
 }
+
 .floating-d {
     position: fixed;
     bottom: 10px;
@@ -40,6 +50,6 @@ body {
 }
 @media (max-width: 768px){
     .information{
-        margin-top: 25px;
+        margin-top: 15px;
     }
 }
