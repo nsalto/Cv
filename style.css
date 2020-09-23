@@ -2,7 +2,7 @@
     width: 60%;
     height: 60%;
     margin: 21%;
-    border: 1px solid white;
+    border: px solid white;
 }
 body {
     font-family: 'Roboto', 'Verdana';
@@ -53,4 +53,9 @@ a {
     .information{
         margin-top: 15px;
     }
+}
+
+.label-lan{
+    font-size: 11px;
+    margin-bottom: 2px;
 }

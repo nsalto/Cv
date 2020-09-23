@@ -39,7 +39,7 @@ const lenguajesActuales = [
         label: "Bootstrap"
     },
     {   ico: "https://devicons.github.io/devicon/devicon.git/icons/visualstudio/visualstudio-plain.svg",
-        label: "Visual Studio Code"
+        label: "VS Code"
     },
     {   ico: "https://devicons.github.io/devicon/devicon.git/icons/github/github-original.svg",
         label: "GitHub"
@@ -72,12 +72,30 @@ const cursos_certificados = [
 
 
 const lenguajesAprendiendo = [
-    "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
-    "https://devicons.github.io/devicon/devicon.git/icons/react/react-original.svg",
-    "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
-    "https://spng.pngfind.com/pngs/s/626-6262352_load-images-in-gatsby-gatsbyjs-icon-hd-png.png",
-    "https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg",
-    "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg",
+    {
+        ico: "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
+        label: "Python"
+    },
+    {
+        ico: "https://devicons.github.io/devicon/devicon.git/icons/react/react-original.svg",
+        label: "React"
+    },
+    {
+        ico: "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
+        label: "Redux"
+    },
+    {
+        ico: "https://spng.pngfind.com/pngs/s/626-6262352_load-images-in-gatsby-gatsbyjs-icon-hd-png.png",
+        label: "Gatsby"
+    },
+    {
+        ico: "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original.svg",
+        label: "Vue"
+    },
+    {
+        ico: "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg",
+        label: "Nodejs"
+    },
     
 ]
 
@@ -118,15 +136,18 @@ for (i = 0; i < estudios.length; i++){
 
 // Itineración que crea los items en "Lenguajes y programas"
 for (i = 0; i < lenguajesActuales.length; i++){
-    var item = document.createElement("div")
-    item.innerHTML = `<img style="margin-right: 15px" align="left" alt="${lenguajesActuales[i].label}" width="40" src="${lenguajesActuales[i].ico}" />`
+    var item = document.createElement("div");
+    item.classList.add("text-center");
+    item.innerHTML = `<p id="Label" class="text-muted label-lan mt-2">${lenguajesActuales[i].label}</p> <img alt="${lenguajesActuales[i].label}" width="40" src="${lenguajesActuales[i].ico}" />`
     document.getElementById("lang_tools").appendChild(item)
 }
 
+
 // Itineración que crea los items en "Lenguajes y tecnologias aprendiendo"
 for (i = 0; i < lenguajesAprendiendo.length; i++){
-    var item = document.createElement("div")
-    item.innerHTML = `<img style="margin-right: 15px" align="left" alt="" width="40" src="${lenguajesAprendiendo[i]}" />`
+    var item = document.createElement("div");
+    item.classList.add("text-center");
+    item.innerHTML = `<p id="Label" class="text-muted label-lan mt-2">${lenguajesAprendiendo[i].label}</p><img alt="" width="40" src="${lenguajesAprendiendo[i].ico}" />`
     document.getElementById("lenguajes_aprendiendo").appendChild(item)
 }
 
