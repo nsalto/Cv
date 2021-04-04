@@ -1,124 +1,112 @@
-const experiencia = [{
-    lugar: "Konecta Argentina",
-    periodo: "2019 - Actualidad",
-    puesto: "Analista administrativo de datos",
-    descripción: "Realizar informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
+const nombre = "Maximiliano Nahuel Salto"
+
+const experiencia = [
+    {
+        lugar: "Fullstack develop",
+        periodo: "Dic 2020 - Actualidad",
+        descripción: "Actualmente trabajo como desarrollador Fullstack en Ross outside the box, entre mis funciones está la creación, implementación de software tanto en backend como en frontend"
     },
     {
-    lugar: "Konecta Argentina",
-    puesto: "Facilitador",
-    periodo: "2017-2019",
-    descripción: "Monitoreo, optimizacion y logística de rutas de técnicos instaladores."
+        lugar: "QA Automation",
+        periodo: "Oct 2020 - Actualidad",
+        descripción: "Quality Assurance en Ross outside the box, entre mis funciones se encuentran: crear planes de prueba y testing, probar y crear automatizaciones, mejorar estrategias de prueba y asegurar la calidad del software"
+    },
+    {
+    lugar: "Analista de Datos",
+    periodo: "Feb 2018 -  Oct 2020",
+    descripción: "Realizar automatizaciones, informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
     }
 ];
 
-
 const estudios = [{
-    lugar: "Adolfo Bioy Casares",
-    periodo: "2003-2009",
-    descripción: "Bachiller en Economía y gestión de las organizaciones con especialidad en turismo y hotelería"
-    },
-    {
-    lugar: "Facultad de Matemática Astronomía, Física y Computación (UNC)",
-    periodo: "2015-actualidad",
-    descripción: "Licenciatura en ciencias de la computación"
+    lugar: "Facultad de Matemática, Astronomía, Física y Computación (UNC)",
+    periodo: "2016-Actualidad",
+    descripción: "Licenciatura en ciencias de la Computación"
     }
 ];
 
 const lenguajesActuales = [
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-plain.svg",
-        label: "Java Script"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original.svg",
-        label: "HTML5"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original.svg",
-        label: "CSS"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/bootstrap/bootstrap-plain.svg",
-        label: "Bootstrap"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/visualstudio/visualstudio-plain.svg",
-        label: "VS Code"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/github/github-original.svg",
-        label: "GitHub"
-    },
-    {   ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/782px-Microsoft_Excel_2013_logo.svg.png",
-        label: "Excel"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/slack/slack-original.svg",
-        label: "Slack"
-    },
-    {   ico: "https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original.svg",
-        label: "MongoDB"
-    }
-]; 
-
-const cursos_certificados = [
-    {   link: "#",
-        label: "JavaScript Algorithms and Data Structures",
-        icon: "https://img.icons8.com/windows/32/000000/free-code-camp.png"
-    },
-    {   link: "https://www.freecodecamp.org/certification/fcc992655f2-7dbb-43ef-b180-d87b5c6c259b/data-analysis-with-python-v7",
-        label: "Data Analysis with Python",
-        icon: "https://img.icons8.com/windows/32/000000/free-code-camp.png"
-    },
-    {   link: "#",
-        label: "Machine Learning: Data Science with Python",
-        icon: "https://cdn.freebiesupply.com/logos/large/2x/udemy-1-logo-png-transparent.png"
-    }
-];
-
-
-const lenguajesAprendiendo = [
     {
-        ico: "https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg",
-        label: "Python"
+        name: "Vuejs",
+        img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
     },
     {
-        ico: "https://devicons.github.io/devicon/devicon.git/icons/react/react-original.svg",
-        label: "React"
+        name: "Angular 7+",
+        img:"https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/angularjs/angularjs-plain.svg"
     },
     {
-        ico: "https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg",
-        label: "Redux"
+        name: "JavaScript",
+        img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
     },
     {
-        ico: "https://spng.pngfind.com/pngs/s/626-6262352_load-images-in-gatsby-gatsbyjs-icon-hd-png.png",
-        label: "Gatsby"
+        name: "HTML",
+        img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
     },
     {
-        ico: "https://devicons.github.io/devicon/devicon.git/icons/vuejs/vuejs-original.svg",
-        label: "Vue"
+        name: "CSS",
+        img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
     },
     {
-        ico: "https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg",
-        label: "Nodejs"
+        name: "NodeJS",
+        img:"https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/nodejs/nodejs-original.svg"
     },
+    {
+        name: "GIT",
+        img:"https://raw.githubusercontent.com/jmnote/z-icons/master/svg/git.svg"
+    },
+    {
+        name: "Python",
+        img:"https://raw.githubusercontent.com/jmnote/z-icons/master/svg/python.svg"
+    },
+    {
+        name: "MySQL",
+        img:"https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/mysql/mysql-plain.svg"
+    } 
     
 ]
 
-// Cursos y certificados
-for (i = 0; i < cursos_certificados.length; i++){
-    var item = document.createElement("div")
-    item.innerHTML =
-    `<div class="d-flex justify-content-between mt-4">
-    <h6><img width="30px" hight="30px" src=${cursos_certificados[i].icon}/><a href=${cursos_certificados[i].link}> ${cursos_certificados[i].label}</a></h6>
-    </div>`
-    document.getElementById("cyc").appendChild(item)
-}
+const lenguajesAprendiendo = [
+    {
+        name: "Angular 7+",
+        img: "https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/angularjs/angularjs-plain.svg",
+    },
+    {
+        name: "MongoDB",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+    },
+    {
+        name: "C",
+        img: "https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/c/c-original.svg",
+    },
+    {
+        name: "SASS",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+    },
+    {
+        name: "Docker",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+    },
+    {
+        name: "Amazon Web Service",
+        img: "https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+    }
+        
+]
+
+// Cambia el nombre del H1 que con tiene el nombre del usuario
+var nombreDOM = document.getElementById("name")
+nombreDOM.innerText = nombre
 
 // Itineración que crea los items en "Experiencia"
 for (i = 0; i < experiencia.length; i++){
     var item = document.createElement("div")
     item.innerHTML =
-    `<div class="d-flex justify-content-between mt-4">
-    <h6 class="br">${experiencia[i].lugar}</h6>
+    `<div class="d-flex justify-content-between mt-3">
+    <span class="card-title h6 exp-title">${experiencia[i].lugar}</span>
+    <span class="exp-date">${experiencia[i].periodo}</span>
     </div>
-    <span class="exp-date"><i class="far fa-calendar-alt mr-2"></i>${experiencia[i].periodo}</span>
-    <p><b>${experiencia[i].puesto}</b><p>
-    <p>${experiencia[i].descripción}</p> <hr>`
+    <p>${experiencia[i].descripción}</p>
+    <hr>`
     document.getElementById("experiencia").appendChild(item)
 }
 
@@ -127,29 +115,27 @@ for (i = 0; i < estudios.length; i++){
     var item = document.createElement("div")
     item.innerHTML =
     `<div class="d-flex justify-content-between">
-    <h6>${estudios[i].lugar}</h6>
+    <span class="card-title h6 exp-title">${estudios[i].lugar}</span>
+    <span class="exp-date">${estudios[i].periodo}</span>
     </div>
-    <span class="exp-date"><i class="far fa-calendar-alt mr-2"></i>${estudios[i].periodo}</span>
     <p>${estudios[i].descripción}</p>`
     document.getElementById("estudios").appendChild(item)
 }
 
 // Itineración que crea los items en "Lenguajes y programas"
 for (i = 0; i < lenguajesActuales.length; i++){
-    var item = document.createElement("div");
-    item.classList.add("text-center");
-    item.innerHTML = `<p id="Label" class="text-muted label-lan mt-2">${lenguajesActuales[i].label}</p> <img alt="${lenguajesActuales[i].label}" width="40" src="${lenguajesActuales[i].ico}" />`
-    document.getElementById("lang_tools").appendChild(item)
+    var item = document.createElement("div")
+    item.innerHTML = `<img class="languages" title="${lenguajesActuales[i].name}" align="left" alt="${lenguajesActuales[i].name}" width="40" src="${lenguajesActuales[i].img}" />`
+    document.getElementById("lenguajes_actuales").appendChild(item)
 }
-
 
 // Itineración que crea los items en "Lenguajes y tecnologias aprendiendo"
 for (i = 0; i < lenguajesAprendiendo.length; i++){
-    var item = document.createElement("div");
-    item.classList.add("text-center");
-    item.innerHTML = `<p id="Label" class="text-muted label-lan mt-2">${lenguajesAprendiendo[i].label}</p><img alt="" width="40" src="${lenguajesAprendiendo[i].ico}" />`
+    var item = document.createElement("div")
+    item.innerHTML = `<img class="languages" align="left" title="${lenguajesAprendiendo[i].name}" alt="${lenguajesAprendiendo[i].name}" width="40" src="${lenguajesAprendiendo[i].img}" />`
     document.getElementById("lenguajes_aprendiendo").appendChild(item)
 }
+
 
 function printDiv(printable){
     var printContents = document.getElementById(printable).innerHTML;

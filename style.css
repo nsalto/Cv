@@ -1,41 +1,23 @@
-#profilePhoto {
-    width: 60%;
-    height: 60%;
-    margin: 21%;
-    border: 2px solid white;
+.entry {
+    padding: 5px 5px 5px 5px;
 }
-body {
-    font-family: 'Roboto', 'Verdana';
-    font-size: 14px;
-    background-image: url('./images/bg.png');
-    background-size: cover;
+a{
+    color: #555;
+    text-decoration: none;
 }
-#dpersonales {
-    max-width: 400px;
-    background-color: rgb(34, 42, 116) ;
-    color: white;
+a:hover {
+    font-weight: 400;
+    color:#333;
+    text-decoration: none;
 }
-
-a {
-    color: black;
-  }
-
-#cardcontent{
-    background-color: rgba(53, 75, 134, 0.7) ;
-}
-
 @media print {
 	.no-printme  {
 		display: none;
 	}
 	.printme  {
 		display: block;
-    }
-    .container {
-        width: auto;
-      }
+	}
 }
-
 .floating-d {
     position: fixed;
     bottom: 10px;
@@ -51,11 +33,10 @@ a {
 }
 @media (max-width: 768px){
     .information{
-        margin-top: 15px;
+        margin-top: 25px;
     }
 }
-
-.label-lan{
-    font-size: 11px;
-    margin-bottom: 2px;
+.languages {
+    margin: 10px 5px 10px 5px;
+    margin-top: 10px;
 }

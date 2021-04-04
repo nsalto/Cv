@@ -1,103 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="images/captura.jpg" /> 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <title>Curriculum Vitae 2020</title>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="card" id="dpersonales">
-                    <div class="profile"><img src="./images/profile-p.jpg" id="profilePhoto" alt="profile-photo" width="100%" class="rounded d-block"></div>
-                    <h5 id="nombre" class="ml-3">Maximiliano Nahuel Alejandro Salto</h3>
-                    <h6 class="ml-3">Estudiante en Ciencias de la computación</h6>
-                    <hr>
-                    <div class="card-body">
-                        <h5>DATOS PERSONALES</h5>
-                        <hr>
-                        <h6><i class="fas fa-home mr-2"></i> Córdoba, Argentina</h6>
-                        <hr>
-                        <h6><i class="fas fa-envelope mr-2"></i> nahuelmnas@gmail.com</h6>
-                        <hr>
-                        <h6><i class="fas fa-phone-alt"></i> (+54)3517889937</h6>
-                        <hr>
-                        <h6><i class="fab fa-github-square mr-2"></i> <a href="https://github.com/NazgulFS">GitHub</a></h6>
-                        <h6><i class="fab fa-linkedin-in mr-2"></i> <a href="https://linkedin.com/in/mnasalto">Linkedin</a></h6>
-                        <hr>
-                        <h5><i class="fas fa-globe mt-3"></i> IDIOMAS</h5>
-                        <ul>
-                            <li>Inglés (Intermedio)</li>
-                            <li>Español (Nativo)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-12 content">
-                <div id="cardcontent" class="card">
-                    <div class="card m-3"><p class="m-3">Mi nombre es Maximiliano Salto, actualmente me encuentro en busqueda de 
-                        una empresa para poder aportar, capacitarme y desarrollar en el
-                        ámbito de la programación y/o análisis de datos.
-                        Poseo conocimientos en algunos lenguajes de programación,
-                        capacidad para manipular y razonar formalmente sobre
-                        expresiones simbólicas, lógicas y especificar los requerimientos de un
-                        problema. Cuento con versatilidad para adaptarme a cambios y muchisimo entusiasmo por formar parte de un equipo asi como también curiosidad en aprender
-                        herramientas nuevas.</p> </div>
-                    <div class="card-body">
-                        <div class="card">
-                            <h5 class="card-header border-primary">Experiencia laboral</h5>
-                            <div class="card-body" id="experiencia">
-                            </div>
-                        </div>
-                        <div class="card mt-2">
-                            <h5 class="card-header border-primary">Estudios</h5>
-                            <div class="card-body" id="estudios">
-                            </div>
-                        </div>
-                        <div class="card mt-2">
-                            <h5 class="card-header border-primary">Cursos y certificados</h5>
-                            <div class="card-body" id="cyc">
-                            </div>
-                        </div>
-                        <div class="card mt-2">
-                            <h5 class="card-header border-primary">Lenguajes, tecnologías y herramientas que manejo</h5>
-                            <div class="card-body d-flex justify-content-around flex-wrap" id="lang_tools">
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      property="og:image"
+      content="https://conradocanas.github.io/curriculum-vitae/images/cv.png"
+    />
 
-                            </div>
-                        </div>
-                        <div class="card mt-2">
-                            <h5 class="card-header border-primary">Lenguajes y tecnologías en estudio</h5>
-                            <div class="card-body d-flex justify-content-around flex-wrap" id="lenguajes_aprendiendo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV Nahuel Salto</title>
+  </head>
+  <body>
+    <div class="container printme pt-4 pb-4">
+      <div class="row pt-4 pb-4">
+        <div class="col-sm-4">
+          <h3 id="name"></h3>
+          <span class="badge badge-primary no-printme">Working</span>
+          <span class="badge badge-success no-printme">Open to proposals</span>
         </div>
-        <!-- Botones flotantes de impresión y descarga-->
-        <a role="button" class="btn btn-secondary floating-p no-printme" onclick={window.print()}>
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-printer" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 2H5a1 1 0 0 0-1 1v2H3V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h-1V3a1 1 0 0 0-1-1zm3 4H2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1v1H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"/>
-                <path fill-rule="evenodd" d="M11 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM5 8a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H5z"/>
-                <path d="M3 7.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-              </svg> Imprimir</a>
-        <a href="cv.pdf" role="button" class="btn btn-primary floating-d no-printme">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8z"/>
-            <path fill-rule="evenodd" d="M5 7.5a.5.5 0 0 1 .707 0L8 9.793 10.293 7.5a.5.5 0 1 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5 8.207A.5.5 0 0 1 5 7.5z"/>
-            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 1z"/>
-            </svg> Descargar</a>
+        <div class="col-sm-8">
+          <p class="mt-2">
+            Mi nombre es Nahuel Salto trabajo actualmente como desarrollador Fullstack. Poseo conocimientos en algunos lenguajes de programación y herramientas de desarrollo, cuento con capacidad para manipular y razonar formalmente sobre expresiones simbólicas, lógicas y especificar los requerimientos de un problema, versatilidad para adaptarme a cambios y muchisimo entusiasmo por formar parte de un equipo así como también curiosidad en aprender herramientas nuevas. 
+
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- DATOS -->
+          <div class="card">
+            <h5 class="card-header">Datos</h5>
+            <div class="card-body titulo">
+              <div class="entry">
+                <span class="entry"
+                  ><strong>Correo: </strong>nahuelmnas@gmail.com</span
+                >
+              </div>
+              <div class="entry">
+                <span class="entry"
+                  ><strong>Residencia actual: </strong>Córdoba capital</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- CONTACTO -->
+          <div class="card mt-4">
+            <h5 class="card-header">Enlaces</h5>
+            <div class="card-body titulo">
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="20px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+                />
+                <span class="entry"
+                  ><a href="https://github.com/NazgulFS"
+                    >GitHub</a
+                  ></span
+                >
+              </div>
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="20px"
+                  src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png"
+                />
+                <span class="entry"
+                  ><a href="www.linkedin.com/in/mnasalto"
+                    >Linkedin</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- IDIOMAS -->
+          <div class="card mt-4">
+            <h5 class="card-header">Idiomas</h5>
+            <div class="card-body">
+              <div class="entry">
+                <span><strong>Español:</strong></span
+                ><span> Nativo</span>
+              </div>
+              <div class="entry">
+                <span><strong>Ingles:</strong></span
+                ><span> Intermedio</span>
+              </div>
+            </div>
+          </div>
+          <!-- CERTIFICADOS-->
+          <div class="card mt-4">
+            <h5 class="card-header">Certificados</h5>
+            <div class="card-body">
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="25px"
+                  src="https://img.icons8.com/windows/32/000000/free-code-camp.png"
+                />
+                <span class="entry"
+                  ><a
+                    href="https://www.freecodecamp.org/certification/fcc992655f2-7dbb-43ef-b180-d87b5c6c259b/data-analysis-with-python-v7"
+                    >Data Analysis with Python</a
+                  ></span
+                >
+              </div>
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="25px"
+                  src="https://cdn.freebiesupply.com/logos/large/2x/udemy-1-logo-png-transparent.png"
+                />
+                <span class="entry"
+                  ><a
+                    href="#"
+                    >Master en JavaScript: JS, jQuery, Angular & NodeJS</a
+                  ></span
+                >
+              </div>
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="25px"
+                  src="https://cdn.freebiesupply.com/logos/large/2x/udemy-1-logo-png-transparent.png"
+                />
+                <span class="entry"
+                  ><a
+                    href="#"
+                    >Machine Learning: Data Science en Python</a
+                  ></span
+                >
+              </div>
+              <div class="entry">
+                <img
+                  alt="Github"
+                  width="25px"
+                  src="https://img.icons8.com/windows/32/000000/free-code-camp.png"
+                />
+                <span class="entry"
+                  ><a href="https://www.freecodecamp.org/certification/fcc992655f2-7dbb-43ef-b180-d87b5c6c259b/javascript-algorithms-and-data-structures"
+                    >JavaScript Algorithms and Data Structures</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 information">
+          <div class="card">
+            <h5 class="card-header">Experiencia laboral</h5>
+            <div class="card-body" id="experiencia"></div>
+          </div>
+          <div class="card mt-4">
+            <h5 class="card-header">Estudios</h5>
+            <div class="card-body" id="estudios"></div>
+          </div>
+          <div class="card mt-4">
+            <h6 class="card-header">
+              Lenguajes, tecnologías y programas de uso profesional
+            </h6>
+            <div
+              class="card-body d-flex justify-content-around flex-wrap"
+              id="lenguajes_actuales"
+            ></div>
+          </div>
+          <div class="card mt-4">
+            <h6 class="card-header">Lenguajes y tecnologías en estudio</h6>
+            <div
+              class="card-body d-flex justify-content-around flex-nowrap"
+              id="lenguajes_aprendiendo"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- Botones flotantes de impresión y descarga-->
+      <a
+        role="button"
+        class="btn btn-primary floating-p no-printme"
+        onclick="{window.print()}"
+      >
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-printer"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 2H5a1 1 0 0 0-1 1v2H3V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h-1V3a1 1 0 0 0-1-1zm3 4H2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1v1H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M11 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM5 8a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H5z"
+          />
+          <path d="M3 7.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+        </svg>
+        Imprimir</a
+      >
     </div>
-    <!--Footer-Script-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
