@@ -2,7 +2,7 @@ const nombre = "Maximiliano Nahuel Salto"
 
 const experiencia = [
     {
-        lugar: "Fullstack develop",
+        lugar: "Fullstack develop Jr",
         periodo: "Dic 2020 - Actualidad",
         descripción: "Actualmente trabajo como desarrollador Fullstack en Ross outside the box, entre mis funciones está la creación, implementación de software tanto en backend como en frontend"
     },
