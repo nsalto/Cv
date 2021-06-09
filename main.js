@@ -75,8 +75,8 @@ const lenguajesAprendiendo = [
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
     },
     {
-        name: "C",
-        img: "https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/c/c-original.svg",
+        name: "Typescript",
+        img: "https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg",
     },
     {
         name: "SASS",
