@@ -2,19 +2,28 @@ const nombre = "Maximiliano Nahuel Salto"
 
 const experiencia = [
     {
-        lugar: "Fullstack develop Jr",
-        periodo: "Dic 2020 - Actualidad",
+        lugar: "Coca-Cola Andina",
+        puesto: "Solution Developer",
+        periodo: "Jun 2021 - Actualidad",
+        descripción: "Desarrollo y mantenimiento de Web apps y Mobile Apps, planificacion y diseño de nuevas funcionalidades y mejoras."
+    },
+    {
+        lugar: "Ross Outside the Box",
+        puesto: "Fullstack develop Jr",
+        periodo: "Dic 2020 - Jun 2021",
         descripción: "Actualmente trabajo como desarrollador Fullstack en Ross outside the box, entre mis funciones está la creación, implementación de software tanto en backend como en frontend"
     },
     {
-        lugar: "QA Automation",
-        periodo: "Oct 2020 - Actualidad",
+        lugar: "Ross Outside the Box",
+        puesto: "QA Automation",
+        periodo: "Ago 2020 - Dic 2020",
         descripción: "Quality Assurance en Ross outside the box, entre mis funciones se encuentran: crear planes de prueba y testing, probar y crear automatizaciones, mejorar estrategias de prueba y asegurar la calidad del software"
     },
     {
-    lugar: "Analista de Datos",
-    periodo: "Feb 2018 -  Oct 2020",
-    descripción: "Realizar automatizaciones, informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
+        lugar: "Konecta Argentina",
+        puesto: "Analista de Datos",
+        periodo: "Feb 2018 -  Oct 2020",
+        descripción: "Realizar automatizaciones, informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
     }
 ];
 
@@ -26,6 +35,10 @@ const estudios = [{
 ];
 
 const lenguajesActuales = [
+    {
+        name: "NodeJS",
+        img:"https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/nodejs/nodejs-original.svg"
+    },
     {
         name: "Vuejs",
         img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg"
@@ -45,10 +58,6 @@ const lenguajesActuales = [
     {
         name: "CSS",
         img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-    },
-    {
-        name: "NodeJS",
-        img:"https://raw.githubusercontent.com/devicons/devicon/2809b567852a4648062a2d3e7c1c531367458c0b/icons/nodejs/nodejs-original.svg"
     },
     {
         name: "GIT",
@@ -79,8 +88,8 @@ const lenguajesAprendiendo = [
         img: "https://raw.githubusercontent.com/devicons/devicon/7a4ca8aa871d6dca81691e018d31eed89cb70a76/icons/typescript/typescript-original.svg",
     },
     {
-        name: "SASS",
-        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+        name: "Web 3.0",
+        img: "https://raw.githubusercontent.com/vorillaz/devicons/ba75593fdf8d66496676a90cbf127d721f73e961/!SVG/w3c.svg",
     },
     {
         name: "Docker",
@@ -102,8 +111,9 @@ for (i = 0; i < experiencia.length; i++){
     var item = document.createElement("div")
     item.innerHTML =
     `<div class="d-flex justify-content-between mt-3">
-    <span class="card-title h6 exp-title">${experiencia[i].lugar}</span>
-    <span class="exp-date">${experiencia[i].periodo}</span>
+    <strong><h5 class="card-title exp-title">${experiencia[i].lugar}</h5></strong>
+    <p class="card-title exp-title text-muted">${experiencia[i].puesto}</p>
+    <span class="exp-date text-muted">${experiencia[i].periodo}</span>
     </div>
     <p>${experiencia[i].descripción}</p>
     <hr>`
@@ -116,7 +126,7 @@ for (i = 0; i < estudios.length; i++){
     item.innerHTML =
     `<div class="d-flex justify-content-between">
     <span class="card-title h6 exp-title">${estudios[i].lugar}</span>
-    <span class="exp-date">${estudios[i].periodo}</span>
+    <span class="exp-date text-muted">${estudios[i].periodo}</span>
     </div>
     <p>${estudios[i].descripción}</p>`
     document.getElementById("estudios").appendChild(item)
