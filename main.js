@@ -11,19 +11,19 @@ const experiencia = [
         lugar: "Ross Outside the Box",
         puesto: "Fullstack develop Jr",
         periodo: "Dic 2020 - Jun 2021",
-        descripción: "Actualmente trabajo como desarrollador Fullstack en Ross outside the box, entre mis funciones está la creación, implementación de software tanto en backend como en frontend"
+        descripción: "Fullstack en Ross outside the box, creación e implementación de software tanto en backend como en frontend"
     },
     {
         lugar: "Ross Outside the Box",
         puesto: "QA Automation",
         periodo: "Ago 2020 - Dic 2020",
-        descripción: "Quality Assurance en Ross outside the box, entre mis funciones se encuentran: crear planes de prueba y testing, probar y crear automatizaciones, mejorar estrategias de prueba y asegurar la calidad del software"
+        descripción: "Quality Assurance en Ross outside the box, Crear planes de prueba y testing, automatizaciones, mejorar estrategias de prueba y asegurar la calidad del software"
     },
     {
         lugar: "Konecta Argentina",
         puesto: "Analista de Datos",
         periodo: "Feb 2018 -  Oct 2020",
-        descripción: "Realizar automatizaciones, informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
+        descripción: "Automatizaciones JS, informes, mediciones, gráficos para el seguimiento de las actividades, y detectar falencias y/o posibilidad de optimizaciones de tareas en diversas áreas."
     }
 ];
 
